@@ -5,7 +5,8 @@ module.exports = {
   entry: './js/ClientApp.jsx',
   devtool: 'cheap-eval-source-map',
   devServer: {
-    publicPath: '/public/'
+    publicPath: '/public/',
+    historyApiFallback: true
   },
   output: {
     path: path.join(__dirname, 'public'),
